@@ -38,25 +38,25 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Rectangle Fill="LightGray" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="1" Content="Načti obrázek" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="1" Content="Načti obrázek" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="load_image"/>
         <TextBox Grid.Column="0" Grid.Row="2"  Text="50" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="3" Content="Zesílení červené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="4" Content="Zesílení zelené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="5" Content="Zesílení modré" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="6" Content="odstíny červené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="7" Content="odstíny zelené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="8" Content="odstíny modré" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="9" Content="odstíny šedé" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="10" Content="Sépie" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="11" Content="Negativ" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="12" Content="Redukce o 1/2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="13" Content="Redukce o 1/4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="14" Content="Redukce o 1/8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="3" Content="Zesílení červené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="zesileni_cerveny"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="4" Content="Zesílení zelené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="zesileni_zeleny"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="5" Content="Zesílení modré" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="zesileni_modre"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="6" Content="odstíny červené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="odstiny_cervene"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="7" Content="odstíny zelené" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="odstiny_zelene"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="8" Content="odstíny modré" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="odstiny_modre"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="9" Content="odstíny šedé" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="odstiny_sede"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="10" Content="Sépie" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="sepie"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="11" Content="Negativ" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="negativ"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="12" Content="Redukce o 1/2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="redukce_1_2"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="13" Content="Redukce o 1/4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="redukce_1_4"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="14" Content="Redukce o 1/8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="redukce_1_8"/>
         <TextBox Grid.Column="0" Grid.Row="15"  Text="16" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="16" Content="Rozostření" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button Background="LightGray" Grid.Column="0" Grid.Row="17" Content="Vrátit změny" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="16" Content="Rozostření" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="rozostreni"/>
+        <Button Background="LightGray" Grid.Column="0" Grid.Row="17" Content="Vrátit změny" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="vratit_zmeny"/>
         <Rectangle Fill="LightGray" Grid.Column="0" Grid.Row="18"/>
-        <Image Source="/Assets/rock_image.jpg" Grid.Column="2" Grid.RowSpan="16" Grid.Row="2" />
+        <Image x:Name="EditedImage" Grid.Column="2" Grid.RowSpan="16" Grid.Row="2" />
 
     </Grid>
 </Page>
